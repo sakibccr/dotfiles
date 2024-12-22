@@ -7,4 +7,5 @@ set wildmenu wildmode=full
 let g:netrw_liststyle=1
 " let g:netrw_banner = 0
 set scrolloff=5
+set linebreak
 
