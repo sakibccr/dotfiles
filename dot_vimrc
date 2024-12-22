@@ -1,0 +1,10 @@
+syntax enable
+set tabstop=4 expandtab shiftwidth=4 smarttab
+set number
+set hlsearch
+set incsearch
+set wildmenu wildmode=full
+let g:netrw_liststyle=1
+" let g:netrw_banner = 0
+set scrolloff=5
+
