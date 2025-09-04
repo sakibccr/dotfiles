@@ -1,12 +1,48 @@
-filetype plugin indent on
+"====================
+" VIM BASICS
+"====================
 syntax enable
-set tabstop=4 expandtab shiftwidth=4 smarttab
+filetype plugin indent on
+set hidden
+set termguicolors
 set number
 set hlsearch
 set incsearch
-set wildmenu wildmode=full
-let g:netrw_liststyle=1
-" let g:netrw_banner = 0
 set scrolloff=5
 set linebreak
 
+"====================
+" PLUGINS
+"====================
+call plug#begin('~/.vim/plugged')
+Plug 'ap/vim-buftabline'
+call plug#end()
+
+"====================
+" AESTHETICS & UX
+"====================
+" Use 4 spaces for tabs and indentation
+set tabstop=4 shiftwidth=4 expandtab
+set smarttab
+
+colorscheme retrobox
+
+"====================
+" MAPPINGS
+"====================
+" Clear search highlighting
+nnoremap <silent> <Esc> :noh<CR>
+
+" Navigate buffers
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
+
+" Easily move between splits
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Quickly open splits
+nnoremap <leader>sv :vsplit<CR>
+nnoremap <leader>sh :split<CR>
