@@ -1,0 +1,22 @@
+# Font configuration
+font-family = Terminess Nerd Font
+font-size = 14
+
+# Window settings
+background-opacity = 1.0
+window-padding-x = 5
+window-padding-y = 5
+
+# Scrollback
+scrollback-limit = 100000
+
+# Cursor style: Solid block when focused, hollow box when unfocused
+cursor-style = block
+cursor-style-blink = false
+unfocused-split-opacity = 0.9
+
+# Prevent shell integration from overriding the cursor style to a line
+shell-integration-features = no-cursor
+
+# Theme (Ghostty has hundreds built-in, matching your inferno aesthetic)
+theme = Alien Blood
